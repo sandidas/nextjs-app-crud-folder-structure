@@ -27,7 +27,7 @@ export async function POST(req: NextRequest) {
         console.log("savedUser", savedUser);
 
         // return response
-        return NextResponse.json({ message: "User created successfully", success: true, savedUser }, { status: 500 })
+        return NextResponse.json({ message: "User created successfully", success: true, savedUser })
         //
 
     } catch (error: any) {
